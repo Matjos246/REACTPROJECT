@@ -4,4 +4,25 @@ h4{
 }
 *{
     background-color: gainsboro;
+    padding:0;
+    margin: 0;
+}
+.Nbar{
+    padding: 1px;
+    margin: 5px;
+}
+.Navbar{
+    padding:5px; 
+    margin: 20px;  
+}
+#Nav{
+
+}
+a{
+    margin:5px;
+}
+#footer a{
+    display: grid;
+    padding:2px;
+
 }

@@ -13,8 +13,10 @@ import Student from './pages.jsx/Student';
 import UserProfile from './pages.jsx/userProfile';
 import Effect from './Effect';
 import Blog from './pages.jsx/Blog';
+
 import MakeRequest from './pages.jsx/MakeRequest';
 import Footer from './component/Footer';
+import Ileya from './pages.jsx/ileya';
 // const [allProducts, setallProducts] = useState([]);
 //if a piece of state is needed in more than one component will simply perform state lifting
 const App = () => {
@@ -64,6 +66,8 @@ const App = () => {
  <Route path='/admin/student' element={<Student/>}/>
  <Route path='/Blog' element={<Blog/>} />
  <Route path='/Request' element={<MakeRequest/>}/>
+ <Route path='/ileya' element={<Ileya/>}/>
+
  <Route path="*" element= {<Notfound/>}/>
  <Route path='/student' element={<Student/>}/>
 </Routes>

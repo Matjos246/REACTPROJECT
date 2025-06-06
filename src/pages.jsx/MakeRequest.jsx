@@ -23,11 +23,8 @@ const MakeRequest=()=>{
        {
         products.map((product,index)=>(
             <div>
-               
                 <h5>{product.title}</h5>
-                
                 <h6>${product.price}</h6>
-                
                 <h1><img width={100} height={100} src={product.image} alt="" />
                 <button>{product.id}</button> 
                 </h1>

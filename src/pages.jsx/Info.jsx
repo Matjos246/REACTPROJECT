@@ -1,8 +1,8 @@
-import React from 'react'
+// import React from 'react'
 const Info=()=>{
     return(
         <>
-        <h2>This is all details about page</h2>
+        <h2 className='text-success' >What exactly do you want to know, Prompt your Questions</h2>
     </>
     )
 }

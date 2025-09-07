@@ -3,26 +3,46 @@ h4{
     background-color: brown;
 }
 *{
-    background-color: gainsboro;
+    /* background-color: gainsboro; */
     padding:0;
     margin: 0;
+    box-sizing: border-box;
+  
+      
 }
-.Nbar{
-    padding: 1px;
-    margin: 5px;
-}
-.Navbar{
-    padding:5px; 
-    margin: 20px;  
-}
-#Nav{
 
+.Navbar{
+    padding:20px; 
+    /* margin: 20px;  */
+    background: #000;
+    /* padding-left: 700px; */
+    height: 10vh;
+}
+
+#Nav{
+        color: brown;
+        font-size:19px;
+        padding:  10px;
+        z-index: 2;
+        text-decoration: none;
+       
 }
 a{
+    justify-content: space-around;
+    
     margin:5px;
 }
-#footer a{
-    display: grid;
-    padding:2px;
+#footer{
 
+     
+}
+#footer a{
+    /* display: flex; */
+    float: inline-end;
+    font-size: 15px;
+}
+p{
+    color: #ffff;
+    background-color: chocolate;
+    font-weight: bolder;
 }

@@ -12,16 +12,16 @@ const Product = () => {
 
   
 
-  //     const test=(e)=>{
-  //      console.log(e)
-  //   event.target == document.getElementById('') and thats what the user type
-  //   }
+      const test=(e)=>{
+       console.log(e)
+    // event.target == document.getElementById('') and thats what the user type
+    }
  
 
   return (
     <>
     
-    
+
     </>
   );
 };

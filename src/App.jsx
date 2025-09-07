@@ -13,20 +13,21 @@ import Student from './pages.jsx/Student';
 import UserProfile from './pages.jsx/userProfile';
 import Effect from './Effect';
 import Blog from './pages.jsx/Blog';
-
 import MakeRequest from './pages.jsx/MakeRequest';
 import Footer from './component/Footer';
 import Ileya from './pages.jsx/ileya';
+import Gogo from './pages.jsx/gogo';
+import DisplayProduct from './component/DisplayProduct';
 // const [allProducts, setallProducts] = useState([]);
 //if a piece of state is needed in more than one component will simply perform state lifting
 const App = () => {
-  //    const [allProducts, setallProducts] = useState([]);
-  // const addProducts = (product) => {
-  //   // Now to push into addProducts willfirst create and obj of product
-  //   console.log(product);
-  //   setallProducts([...allProducts, product]);
-  //   console.log(allProducts);
-  // };
+     const [allProducts, setallProducts] = useState([]);
+  const addProducts = (product) => {
+    // Now to push into addProducts willfirst create and obj of product
+    console.log(product);
+    setallProducts([...allProducts, product]);
+    console.log(allProducts);
+  };
   // const delProduct=(index)=>{
   //   let newAllproducts= [...allProducts]
   //   newAllproducts.splice(index,1)
@@ -53,6 +54,7 @@ const App = () => {
    <Navbar/>
 <Routes>
   <Route path='/addproduct' element={<AddProduct/>}/>
+  <Route path='/displayProduct' element={<DisplayProduct/>}/>
  <Route path='/' element={<Home/>}/>
  <Route path='/home' element={<Home/>}/>
  <Route path='/sp-contact' element={<Contact/>}/>
@@ -67,18 +69,17 @@ const App = () => {
  <Route path='/Blog' element={<Blog/>} />
  <Route path='/Request' element={<MakeRequest/>}/>
  <Route path='/ileya' element={<Ileya/>}/>
-
  <Route path="*" element= {<Notfound/>}/>
  <Route path='/student' element={<Student/>}/>
+ <Route path='/footer'element={<Footer/>}/>
+ <Route path='/gg'element={<Gogo/>}/>
 </Routes>
-
 <marquee behavior="" direction=""><Buttton title="Antidote" color='btn btn-warning' allStudents={["sola","dayo","ade",'bimbo']} alPlayers={{firstName:"sola"}}sayHelloFromparent={sayHey}/>
 <Buttton title='chronicle' color='btn btn-primary' sayHelloFromparent={sayHello}/>
 <Buttton title='Genesis' color='btn btn-secondary'sayHelloFromparent={sayHi}/>
 </marquee>
 <br />
 <Footer/>
-
     </>
   );
 };

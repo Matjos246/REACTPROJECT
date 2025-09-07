@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import DisplayProduct from './DisplayProduct';
+
 const AddProduct = () => {
      const [productName, setproductName] = useState("");
       const [productPrice, setproductPrice] = useState(0);
@@ -47,7 +47,7 @@ const AddProduct = () => {
         placeholder="Brand of the product"
         onChange={(e) => setproductBrand(e.target.value)}
       />
-      <button onClick={()=>addProducts({productName, productPrice,productQuantity,productImage,productBrand,})}> Add Product</button>
+      <button onClick={()=>addProducts({productName, productPrice,productQuantity,productImage,productBrand})}> Add Product</button>
       <hr />  
       <DisplayProduct/>
      
